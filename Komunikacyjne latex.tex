@@ -1,0 +1,610 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{courier}
+\renewcommand*\familydefault{\ttdefault}
+\usepackage{pdfpages}
+\usepackage{float}
+\setlength\parindent{0pt}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\geometry{a4paper, portrait, margin=1in}
+%___________________________________________________________________________
+ %\fontfamily{cmr}\selectfont{sample text}  Tym pisać cytaty z                              prawa i innych książek
+%____________________________________________________________________________
+\begin{document}
+\begin{figure}[!t]
+	\centering
+	\includegraphics[scale=1]{D:/Projekty/Komunikacyjne/Resources/AGHznak.jpg}
+    \label{fig:my_label}
+\end{figure}
+\title{Projekt Drogi\\ Budownictwo Komunikacyjne}
+\author{Michał Buczek}
+\date{Dębica - Kwiecień 2020}
+\maketitle
+\newpage
+\renewcommand*\contentsname{Spis treści:}
+\tableofcontents
+\newpage
+%_________________________________________________________________
+
+
+%_________________________________________________________________
+\section{Opis rozwiązań projektowych}
+
+    \subsection{Przedmiot opracowania}
+    Przedmiotem opracowania jest projekt odcinka drogi jednojezdniowej,\\
+    V klasy technicznej, kategorii ruchu KR3.\\
+    Prędkość projektowa trasy wynosi 60 km/h, natomiast dobowa
+    liczba pojedynczych osi na obliczeniowy pas ruchu wynosi 122.
+    
+    \subsection{Zakres opracowania}
+    Zakres opracowania obejmuje:
+    \begin{enumerate}
+        \item Opis rozwiązań projektowych
+        \item Plan sytuacyjny odcinka drogi w skali 1:5000
+        \item Profil podłużny wraz z zaprojektowaną niweletą\\
+        w skali 1:100/1000
+        \item Przekrój typowy na prostej i charakterystyczne\\
+        przekroje poprzeczne
+        \item Objętość i rozdział mas ziemnych
+    \end{enumerate}
+    
+    \subsection{Podstawa opracowania}
+    Projekt opracowano na podstawie danych podanych na karcie projektu.
+    Podstawą normatywną do opracowanie projektu jest: 
+    
+    \fontfamily{cmr}\selectfont{"Rozporządzenie Ministra Transportu i Gospodarki Morskiej z dnia 2 Marca 1999r.\\
+    w sprawie warunków technicznych jakim powinny odpowiadać drogi publiczne\\ i ich usytuowanie"\qquad Dz. U. Nr 43 poz.430}
+\newpage
+
+    \subsection{Parametry projektowanego odcinka drogi}
+    \begin{itemize}
+        \item [--] Klasa drogi: V
+        \item [--] Prędkość projektowa: \(V_{p}=60\frac{km}{h}\)
+        \item [--] Dobowa liczba osi na pas ruchu: 122
+        \item [--] Największe dopuszczalne pochylenie niwelety: 8\%
+        \item [--] Promień łuku poziomego: \(R=250\,m\)
+        \item [--] Promień wypukły łuku pionowego: \(R_{\Uparrow min} = 2500\,m\)
+        \item [--] Promień wklęsły łuku pionowego: \(R_{\Downarrow min} = 1500\,m\)
+        \item [--] Pochylenie pobocza: \#\#\#
+        \item [--] Pochylenie poprzeczne jezdni na prostej: \( i_{o}=2\% \)
+        \item [--] Pochylenie poprzeczne jezdni na łuku: \( i_{p}=4\% \)
+        \item [--] Szerokość pasa ruchu: \(b=3\,m \)
+        \item [--] Szerokość jezdni: \(B=6\,m\)
+        \item [--] Szerokość pobocza: 1\,m
+    \end{itemize}
+    \newpage
+%_________________________________________________________________
+
+\section{Plan sytuacyjny projektowanego odcinka}
+    \quad Dla zadanych punktów trasy drogi określono kąt zwrotu trasy, promień łuku kołowego, parametr \textit{a} krzywej przejściowej oraz pozostałe parametry projektowanego łuku poziomego.\\
+    \quad Plan sytuacyjny odcinka drogi w skali 1:5000 ujęto w załaczniku, na rysunku 1
+    
+    \subsection{Kąt zwrotu trasy drogi}
+    	Kąt zwrotu trasy przyjęto na podstawie pomiaru w programie AutoCAD.\\
+        \newline
+    	\textbf{Przyjęto;} \( \gamma = 39,1013 \,^{o} = 0,682447 \,rad \) 
+    	
+    
+    \subsection{Parametry drogi i łuku kołowego}
+    	
+    	Parametry zostały przyjęte zgodnie z\\
+    	\fontfamily{cmr}\selectfont{"Rozporządzenie Ministra Transportu i Gospodarki Morskiej z dnia 2 Marca 1999r.\\
+    	w sprawie warunków technicznych jakim powinny odpowiadać drogi publiczne\\ i ich usytuowanie"\quad Dz. U. Nr 43 poz.430\quad(dalej RMTiGW)}
+   
+    	\subsubsection{Szerokość drogi}
+    		Zgodnie z \fontfamily{cmr}\selectfont{RMTiGW}
+            oraz \fontfamily{cmr}\selectfont{Rozporządzeniem Ministra Infrastruktury i Rozwoju\\
+            z dnia 10 marca 2015r. §15.1\,\,(dalej RMIiR)}\,\,szerokość minimalna pasa ruchu\\
+            na drodze klasy Z wynosi 3m. \newline
+            
+            \textbf{Przyjęto:} Szerokość pojedyńczego pasa ruchu\quad \( b=3\,m \) \\
+    	    \textbf{Przyjęto:} Szerokość jezdni\quad \( B = 2 \cdot\,3\,m = 6\,m\)
+    	
+    	
+    	\subsubsection{Promień łuku kołowego}
+            Zgodnie z \fontfamily{cmr}\selectfont{RMTiGW §21.1c},
+            dla jezdni nieograniczonej krawężnikami o prędkości\\
+            projektowej $V=60\,km/h$ \quad \textbf{Przyjęto:} $R = 250$\,m
+    		
+    	\subsubsection{Pochylenie poprzeczne jezdni}
+    		Na odcinku prostym, dla jezdni twardej ulepszonej, zgodnie z \fontfamily{cmr}\selectfont{RMTiGW §17.2}, 
+    		\newline \textbf{Przyjęto:} Obustronne pochylenie jezdni $i_{o}=2\%$, dla przekroju daszkowego.
+    		\newpage
+    	
+    \subsection{Wyznaczenie parametrów krzywej przejściowej}
+    	Aby krzywa przejściowa spełniała wymogi bezpieczeństwa i wygody ruchu,\\
+    	wartość parametru a musi spełniać szereg poniższych warunków:
+    	
+    	\subsubsection{Warunek dynamiczny}
+    		Przyrost przyspieszenia dośrodkowego działającego na pojazd poruszający się\\
+    		z prędkością projektową nie może być większy od dopuszczalnego.
+    		\begin{equation}
+    		a_{min}^{(1)}=0,146 \,\cdot\, \sqrt{\frac{V_{p}^{3}}{k}}
+    		\end{equation}
+    		
+    		\textbf{Gdzie:}\\
+    		$V_{p}$ - Prędkość projektowa. \quad Tutaj: $V_{p}$=60$\frac{km}{h}$=16,7$\frac{m}{s}$
+    		
+    		k - Przyrost przyspieszenia dośrodkowego\quad wg. RMTiGW §22.1.1 przyjęto:\,\,k=0,7$\frac{m}{s^{3}}$ \newline
+            \newline
+            \textbf{Tutaj:}
+    		\(a_{min}^{(1)}=0,146 \,\cdot\, \sqrt{\frac{V_{p}^{3}}{k}} = 0,146\,\cdot \sqrt{\frac{16,7^{3}}{0,7}}=11,877\,m\)
+            \newline \newline
+            \textbf{Przyjęto:} \( a^{(1)}_{min}=11,88\,m \)
+    	
+    	\subsubsection{Warunek konstrukcyjny I}
+            
+            Pochylenie podłużne jezdni $i_{d}$ zewnętrznej krawędzi jezdni na długości krzywej przejściowej nie powinno przekraczać wartości dopuszczalnej, stąd:
+    		
+    		\begin{equation}
+    			a_{min}^{(2)}=\sqrt{\frac{b}{2}\,\cdot\,\frac{R}{i_{d}}\,\cdot\,(i_{o}+i_{p})}
+            \end{equation} 
+            
+            \textbf{Gdzie:}\\
+            b - Szerokość jezdni, tutaj \( b = 6,00\,m \)
+
+            R - Promień łuku kołowego, tutaj \( R = 250 \,m\)
+
+            $i_{d}$ - Dopuszczalne dodatkowe pochylenie krawędzi jezdni,
+
+            \qquad wg. RMTiGW §18.3 przyjęto: \(i_{d}=1,6\%\)\\
+            $i_{o}$ - Pochylenie poprzeczne na prostej (spadek dwustronny), dopuszczalne dodatkowe pochylenie krawędzi jezdni,
+            
+            \qquad wg. RMTiGM §17.2.1 przyjęto: \(i_{o}=2,0\%\) \\
+            $i_{p}$ - Pochylenie poprzeczne na łuku (spadek jednostronny),
+            
+            \qquad wg. RMTiGM §21.3 przyjęto \(i_{p}=4\%\)
+            \newline \newline
+            \textbf{Tutaj:} \(
+            a_{min}^{(2)}=\sqrt{\frac{b}{2}\,\cdot\,\frac{R}{i_{d}}\,\cdot\,(i_{o}+i_{p})}
+            =\sqrt{\frac{6}{2}\cdot\frac{250}{1,6}\cdot(2,0+4,0)}
+            =\sqrt{3\cdot156,25\cdot6}=53,033\,m\)
+            \newline \newline \textbf{Przyjęto:} \( a_{min}^{(2)}=53,03\,m \)
+            \newpage
+        \subsubsection{Warunek konstrukcyjny II}
+            Warunek ten wynika z konieczności poszerzenia pasa ruchu na łuku.
+
+            \begin{equation}
+                a_{min}^{(3)} = 1,86 \cdot\, \sqrt[4]{R^{3} \cdot p_{c}}
+            \end{equation} 
+            
+            \textbf{Gdzie:}\\
+            R - Promień łuku kołowego, tutaj \( R = 250 \,m\)\\
+            $P_{c}$ - Całkowite poszerzenie pasa ruchu.
+            
+            \qquad wg. RMTiGM §16.1.1\quad \( p_{c}=\frac{40}{R}=\frac{40}{250}=0,16\,m \)
+
+            \qquad \textbf{Przyjęto:} $p_{c}=0,20\,m$ \\
+
+            \textbf{Tutaj:} \( a_{min}^{(3)} = 1,86 \cdot\, \sqrt[4]{R^{3} \cdot p_{c}} = 1,86 \cdot \sqrt[4]{250^{3} \cdot 0,20} = 78.203\,m \)\\
+            
+            \textbf{Przyjęto:} \( a_{min}^{(3)}=78,21\,m \)
+        
+        \subsubsection{Warunek estetyczny I}
+            Ustalony na podstawie obserwacji połączeń krzywej przejściowej z łukiem kołowym.\\
+            W celu wyeliminowania zauważalności krzywej przejściowej wartość \textit{a} \\
+            musi być większa od minimalnej, a mniejsza od maksymalnej:
+            \begin{equation}
+               \mbox{Wartość minimalna:}\quad a_{min}^{(4)}=\frac{R}{3}
+            \end{equation}
+            \begin{equation}
+                \mbox{Wartość maksymalna:}\quad a_{max}^{(5)}=R
+            \end{equation}
+            \newline
+            \textbf{Tutaj:} \( a_{min}^{(4)}=\frac{R}{3}=\frac{250}{3}=83,33\,m \)\\
+
+            \qquad \,\,\,\,\,\,\, \( a_{max}^{(5)}=R=250\,m \)\\
+
+            \textbf{Przyjęto:} \(a_{min}^{(4)}=83,34\,m \)\\
+
+            \qquad \quad \quad \,\,\,\,  \( a_{max}^{(5)}=250\,m \)
+
+        \subsubsection{Warunek estetyczny II}
+            Ze względów realizacyjnych, wartość przesunięcia \(H\) środka łuku kołowego\\
+            względem stycznej głównej nie może być mniejsza od \( H_{min}=0,2\,m \). Stąd:
+            \begin{equation}
+                a_{min}^{(6)}=1,48 \cdot\, \sqrt[4]{R^{3}}
+            \end{equation}
+
+            \textbf{Tutaj:} \( a_{min}^{(6)}=1,48 \cdot\, \sqrt[4]{R^{3}} = 1,48 \cdot \sqrt[4]{250^{3}} = 93,05\,m \)\\
+
+            \textbf{Przyjęto:} \( a_{min}^{(6)}=93,05\,m \)
+            \newpage
+        
+        \subsubsection{Warunek estetyczny III}
+            W wyniku skrócenia długości odcinka przejazdu wprowadzeniem krzywej przejściowej,\\
+            wartość przesunięcia \(H\) środka łuku kołowego, nie może być większa niż \( H_{max}=2,5\,m \). Stąd:
+
+            \begin{equation}
+                a_{max}^{(7)}=2,78 \cdot\, \sqrt[4]{R^{3}}
+            \end{equation}
+            \newline
+            \textbf{Tutaj:} \( a_{max}^{(7)} = 2,78 \cdot\, \sqrt[4]{R^{3}} = 2,78 \,\cdot \sqrt[4]{250^{3}} = 174,783\,m\)
+            \newline
+
+            \textbf{Przyjęto:} \( a_{max}^{(7)} = 174,78\,m \)
+
+        \subsubsection{Warunek geometryczny}
+            Wartośc parametru klotoidy, przy którym nie występuje łuk kołowy\\
+            przy danym kącie zwrotu wynosi:
+            
+            \begin{equation}
+                a^{(8)}_{max} = R \,\cdot\, \sqrt{\gamma}
+            \end{equation}
+
+            \textbf{Tutaj:} \( a^{(8)}_{max} = R \,\cdot\, \sqrt{\gamma}  = 250 \,\cdot\, \sqrt{0,682447} = 206,5258 \,m \)\\
+
+            \textbf{Przyjęto:} \( a^{(8)}_{max} = 206,52 \,m \)
+
+        \subsubsection{Warunek wygody jazdy}
+            Szczególnie ważne kryterium w przypadku drogi szybkiego ruchu, aby pochylenie poprzeczne\\
+            jezdni zmieniało się maksymalnie o 2\% w czasie 1 sekundy.
+
+            \begin{equation}
+                a_{min}^{(9)} = \sqrt{ R \,\cdot\, V_{p} \,\cdot\, \frac{ i_{p} - i_{d} }{ 7,2 } }
+            \end{equation}
+            
+            \textbf{Tutaj:} \( a_{min}^{(9)} = \sqrt{ R \,\cdot\, V_{p} \,\cdot\, \frac{ i_{p} - i_{d} }{ 7,2 } }
+            = \sqrt{250 \,\cdot\, 16,7 \,\cdot\, \frac{4,0 - 1,6}{7,2} } = 37,305\,m \)\\
+
+            \textbf{Przyjęto:} \( a_{min}^{(9)} = 37,31\,m \)
+
+        \subsubsection{Dopuszczalny przedział wartości parametru \textbf{a}:}
+            Wartość parametru \( a \) krzywej przejściowej nie powinna być mniejsza od największej wartości \( a_{min} \)
+            oraz większa od najmniejszej wartości \( a_{max} \).
+
+            \begin{equation}
+                max(a_{min}^{(1)},\,\,\, a_{min}^{(2)},\,\,\, a_{min}^{(3)},\,\,\, a_{min}^{(4)},\,\,\,
+                a_{min}^{(6)},\,\,\, a_{min}^{(9)}\,)\leq a \leq min(a_{max}^{(5)},\,\,\, a_{max}^{(7)},\,\,\, a_{max}^{(8)})  
+            \end{equation}
+
+            \textbf{Tutaj:} \( a \geq max(11,88\,m\,\,\,53,03\,m\,\,\,78,21\,m\,\,\,83,33\,m\,\,\,93,05\,m\,\,\,37,31\,m)=93,05\,m \)
+            \begin{center} \textit{oraz} \end{center}
+            \qquad \quad\,\, \( a \leq min(250\,m\,\,\,174,78\,m\,\,\,206,52\,m )=\,\,174,78\,m \)\\
+
+            \qquad \qquad \qquad \qquad \qquad  W konsekwencji: \,\,\,  \( 93,05\,m \leq a \leq 174,78\,m \)
+            \newpage
+
+        \subsubsection{Wartość parametru a z uwagi na proporcje \(L:K:L\)}
+                Dla drogi V klasy technicznej korzystna jest proporcja \(L:K:L = 1:2:1\), wtedy:
+                \begin{equation}
+                    a = R \,\cdot\, \sqrt{\frac{\gamma}{3}}
+                \end{equation}
+
+                \textbf{Tutaj:} \( a = R \,\cdot\, \sqrt{\frac{\gamma}{3}} = 250 \,\cdot\, \sqrt{\frac{0,682447}{3}} = 119,238\,m \)\\
+
+                Wartość ta mieści się we wcześniej wskazanym przedziale
+                \begin{itemize}[nolistsep]
+                    \item \textbf{Przyjęto:} \( a = 119,24\,m \)
+                \end{itemize}
+    \subsection{Pikietaż punktów głównych poziomego\\ przejścia krzywoliniowego}
+                \textbf{Dane:}
+                \begin{itemize}
+                    \item[--] Promień łuku kołowego: \( R=250\,m \)
+                    \item[--] Kąt zwrotu trasy: \( \gamma = 0,682447\,rad \)
+                    \item[--] Parametr krzywej przejściowej: \( a= 119,24\,m\)
+                    \item[--] Pikietaż wierzchołka:  \( W:\,km\,0 + 651,50\,m \)
+                \end{itemize}
+        
+        \subsubsection{Długość krzywej przejściowej}
+                \begin{equation}
+                    L = \frac{a^{2}}{R}
+                \end{equation}
+
+                \textbf{Tutaj:} \( L = \frac{a^2}{R} = \frac{119,24^{2}}{250} = 56,8727\,m \approx 56,87\,m  \)
+        
+        \subsubsection{Kąt zwrotu stycznej krzywej przejściowej}
+                \begin{equation}
+                    \tau = \frac{L}{2R}
+                \end{equation}
+
+                \textbf{Tutaj:} \( \tau = \frac{L}{2R} = \frac{56,8727}{2\cdot250} = 0,1137454\,rad = 6,51713^{o} \)
+        
+        \subsubsection{Kąt środkowy łuku kołowego}
+                \begin{equation}
+                    \beta = \gamma - 2\tau 
+                \end{equation}
+
+                \textbf{Tutaj:} \( \beta = \gamma - 2\tau = 0,682447 - 2 \cdot 0,1137454 = 0,454956\,rad = 26,0671^{o} \)
+        
+        \subsubsection{Rzędna końca krzywej przejściowej}
+                \begin{equation}
+                    x = L - \frac{L^{5}}{40 \cdot a^{4} }
+                \end{equation}
+
+                \textbf{Tutaj:} \( x = L - \frac{ L^{5} }{ 40 \,\cdot\, a^{4} } = 56,87 - \frac{56,87^{5}}{40 \,\cdot\, 119,24^{4}} = 56,7964\,m \approx 56,80\,m \)
+                \newpage
+        \subsubsection{Odcięta końca krzywej przejściowej}
+                \begin{equation}
+                    y = \frac{L^{3}}{6 \cdot a^{2}} - \frac{L^{7}}{336 \cdot a^{6}} 
+                \end{equation}
+
+                \textbf{Tutaj:} \( y = \frac{L^{3}}{6 \cdot a^{2}} - \frac{L^{7}}{336 \cdot a^{6}}
+                = \frac{56,87^{3}}{6 \,\cdot\, 119,24^{2}} - \frac{56,87^{7}}{336 \,\cdot\, 119,24^{6}}
+                = 2,1560-0,0020 = 2,1540\,m \approx 2,15\,m \)
+        \subsubsection{Odcięta środka krzywizny}
+            \begin{equation}
+                X_{s} = x - R \,\cdot\, sin(\tau)
+            \end{equation}
+            \textbf{Tutaj:} \( X_{s} = x - R \,\cdot\, sin(\tau) 
+            = 56,80 - 250 \,\cdot\, sin(0,113745) = 56,80 - 28,37 = 28,43\,m \)
+
+        \subsubsection{Przesunięcie środka krzywizny względem łuku kołowego,\\ przed wprowadzeniem krzywych przejściowych} 
+            \begin{equation}
+                H = \frac{L^{2}}{24 \,\cdot\, R}
+            \end{equation}
+            \textbf{Tutaj:} \( H = \frac{L^{2}}{24 \,\cdot\, R} = \frac{56,87^{2}}{24 \,\cdot\, 250}=0,54\,m\)
+
+        \subsubsection{Długość stycznej \(T_{s} \)}
+            \begin{equation}
+                T_{s} = (R+H) \,\cdot\, tan(\frac{\gamma}{2})
+            \end{equation}
+            \textbf{Tutaj:} \( T_{s} = (R+H) \,\cdot\, tan(\frac{\gamma}{2}) = (250 + 0,54) \,\cdot\, tan(\frac{0,682447}{2})=88,97\,m \)
+        
+        \subsubsection{Długość stycznej krzywej całkowitej \(T_{o}\)}
+            \begin{equation}
+                T_{o} = X_{s} + T_{s}
+            \end{equation}
+            \textbf{Tutaj:}  \( T_{o} = X_{s} + T_{s} = 28,43 + 88,97 = 117,40\,m \) 
+        
+            \subsubsection{Odległość od wierzchołka do środka krzywizny}
+                \begin{equation}
+                    Z = R \,\cdot\, ( \frac{1}{cos(\frac{\gamma}{2})} - 1) + H
+                \end{equation}
+                \textbf{Tutaj:} \(  Z = R \,\cdot\, ( \frac{1}{cos(\frac{\gamma}{2})} - 1) + H
+                = 250 \,\cdot\, (\frac{1}{cos(\frac{0,682447}{2})} - 1) + 0,54
+                = 15,84\,m\)
+
+            \subsubsection{Długość łuku kołowego \(K\) po wprowadzeniu krzywej przejściowej}
+                \begin{equation}
+                    K = R \,\cdot\, \beta
+                \end{equation}
+                \textbf{Tutaj:} \( K = R \,\cdot\, \beta = 250 \,\cdot\, 0,454956 = 113,74\,m \)
+
+            \subsubsection{Długosć całkowita przejścia krzywoliniowego}
+                \begin{equation}
+                    \mbox{Ł} = 2L + K
+                \end{equation}
+                \textbf{Tutaj:}  \( \mbox{Ł} = 2L + K = 2 \,\cdot\, 56,87 + 113,74 = 227,48\,m\)
+                \newpage
+
+            \subsubsection{Zestawienie parametrów przejścia krzywoliniowego}
+                \begin{itemize}
+                    \item[--] Promień łuku kołowego: \( R = 250\,m \)
+                    \item[--] Kąt zwrotu trasy: \( \gamma = 39,1013^{o} = 0,682447rad\)
+                    \item[--] Parametr krzywej przejściowej: \( a = 119,24\,m \)
+                    \item[--] Pikietaż wierzchołka: \( W:km\,0 + 651,50\,m \)
+                    \item[--] Długość krzywej przejściowej: \( L = 56,87\,m \)
+                    \item[--] Kąt zwrotu stycznej krzywej przejściowej: \( \tau = 6,5171^{o} = 0,113745rad \)
+                    \item[--] Kąt środkowy łuku kołowego: \( \beta = 26,071^{o} = 0,454956rad \)
+                    \item[--] Rzędna końca krzywej przejściowej: \( x = 56,80\,m \)
+                    \item[--] Odcięta końca krzywej przejściowej: \( y = 2,15\,m \)
+                    \item[--] Przesunięcie środka krzywizny: \( H = 0,54\,m \)
+                    \item[--] Długość stycznej: \( T_{s} = 88,97\,m \)
+                    \item[--] Długość stycznej krzywej całkowitej: \( T_{o} = 117,40\,m \)
+                    \item[--] Odległość wierzchołka od środka krzywizny: \( Z = 15,84\,m \)
+                    \item[--] Długość łuku kołowego: \( K = 113,74\,m \)
+                    \item[--] Długość krzywej przejściowej: \( L = 56,87\,m\)
+                    \item[--] Długość całkowita przejścia krzywoliniowego: \( \mbox{Ł} = 227,48\,m \)           
+                \end{itemize}
+            \subsubsection{Pikietaż punktów głównych przejścia krzywoliniowego}
+                \begin{itemize}
+                    \item[(a)] Początek krzywej przejściowej wejścia:
+                         
+                        \qquad \( PKP_{Wej} = W - T_{o} = 651,50 - 117,40 = \mbox{\textbf{534,10\,m}} \) 
+                        
+                    \item[(b)] Koniec krzywej przejściowej wejścia | Początek łuku kołowego:
+                        
+                        \qquad \( KKP_{Wej}  |  PLK = PKP_{Wej} + L =534,10 + 56,87 = \mbox{\textbf{590,97\,m}} \)
+                        
+                    \item[(c)] Środek łuku kołowego:
+                        
+                        \qquad \( SLK = PLK + \frac{K}{2} = 590,97 + \frac{113,74}{2} = \mbox{\textbf{647,84\,m}} \)
+                        
+                    \item[(d)] Koniec łuku kołowego | Koniec krzywej przejściowej wyjścia:
+                        
+                        \qquad \( KLK | KKP_{Wyj} = SLK + \frac{K}{2} = 647,84 + \frac{113,74}{2} = \mbox{\textbf{704,71\,m}} \)
+                    
+                    \item[(e)] Początek krzywej przejściowej wyjścia:
+                    
+                        \qquad \( PKP_{Wyj} = KKP_{Wyj} + L = 704,71 + 56,87 = \mbox{\textbf{761,58\,m}} \)
+                        
+                \end{itemize}
+\section{Profil podłużny wraz z niweletą}
+    Zgodnie z RMTiGW §24 dla dróg klasy technicznej V, usytuowanej poza obszarem\\
+    zabudowanym, dla prędkości projektowej \(60\,\frac{km}{h}\), przyjęto maksywalne pochylenie\\
+    podłużne jezdni: \( i_{max} = 8,0\% \) oraz minimalne: \( i_{min} = 0,3\% \).
+    \subsection{Rzędne punktów, pochylenia podłużne}
+        Rzędne punktów głównych, razem z odległościami pomiędzy nimi zestawiono poniżej:\\
+        \begin{itemize}[noitemsep]                    \item \( r_{1_{Pocz}} = 282,00\,m.n.p.m. \)
+            \item []  \qquad \qquad \qquad \qquad \qquad \qquad \( l_{1-2} = 259,92\,m \)
+            \item \( r_{2} \, = \quad 281,19\,m.n.p.m. \)
+            \item []  \qquad \qquad \qquad \qquad \qquad \qquad \( l_{2-3} = 320,53\,m \)
+            \item \( r_{3} \, = \quad 282,86\,m.n.p.m \)
+            \item []  \qquad \qquad \qquad \qquad \qquad \qquad \(l_{3-4} = 308,09\,m \)
+            \item \( r_{4} \, = \quad 280,42\,m.n.p.m. \)
+            \item []  \qquad \qquad \qquad \qquad \qquad \qquad \( l_{4-5} = 260,14\,m \)
+            \item \( r_{5} \, = \quad 282,55\,m.n.p.m. \)
+            \item []  \qquad \qquad \qquad \qquad \qquad \qquad \( l_{5-6} = 403,64\,m \)
+            \item \( r_{6_{Kon}} = 280,47\,m.n.p.m. \)
+        \end{itemize}
+
+    \subsection{Wartości pochyleń podłużnych odcinków prostych}
+        Wartość pochyleń podłużnych dla poszczególnych odcinków obliczono wg. wzoru:
+        \begin{equation}
+            i = \frac{r_{n+1} - r_{n}}{l}
+        \end{equation}
+
+        \begin{itemize}
+            \item \( i_{1-2} = \frac{r_{2} - r{1}}{l_{1-2}} \cdot 100\% = \frac{281,19 - 282,00}{259,92} \cdot 100\% = -0,0031163 \cdot 100\% \approx -0,31\% \)
+            \item \( i_{2-3} = \frac{r_{3} - r{2}}{l_{2-3}} \cdot 100\% = \frac{282,86 - 281,19}{320,53} \cdot 100\% = 0,0052101 \cdot 100\% \approx 0,52\% \)
+            \item \( i_{3-4} = \frac{r_{4} - r{3}}{l_{3-4}} \cdot 100\% = \frac{280,42 - 282,86}{308,09} \cdot 100\% = -0,0079198 \cdot 100\% \approx -0,79\% \)
+            \item \( i_{4-5} = \frac{r_{5} - r{4}}{l_{5-6}} \cdot 100\% = \frac{282,55 - 280,42}{260,14} \cdot 100\% = 0,0081879 \cdot 100\% \approx 0,82\% \)
+            \item \( i_{5-6} = \frac{r_{6} - r{5}}{l_{5-6}} \cdot 100\% = \frac{280,47 - 282,55}{403,64} \cdot 100\% = -0,0051531 \cdot 100\% \approx -0,52\% \)
+        \end{itemize}
+        Jak widać, wszystkie wartości nachyleń mieszczą się pomiędzy wartością\\
+        minimalną \(i_{min}=0,3\%\) a maksymalną \( i_{max} = 8\% \)
+        \newpage
+    \subsection{Miary kątów załomów pionowych}
+        Kąty załomów pionowych określono wg. wzoru:
+        \begin{equation}
+            \alpha_{n} = i_{n+1} - i_{n}
+        \end{equation}
+
+        \begin{itemize}
+            \item \( \alpha_{1} = i_{2-3} - i_{1-2} = 0,0052101 + 0,0031163 = 0,0083264\,rad \)
+            \item \( \alpha_{2} = i_{3-4} - i_{2-3} = -0,0079198 - 0,0052101 = -0,0131299\,rad \)
+            \item \( \alpha_{3} = i_{4-5} - i_{3-4} = 0,0081879 + 0,0079198 = 0,0161077\,rad \)
+            \item \( \alpha_{4} = i_{5-6} - i_{4-5} = -0,0051531 - 0,0081879 = -0,0133410\,rad \)
+        \end{itemize}
+    \subsection{Rzędne punktów głównych łuków pionowych}
+        Zgodnie z Rozporządzeniem MTIGW §24.7 dla drogi jednojezdniowej o predkości\\
+        projektowej \(60 \frac{km}{h}\) promienie łuków wypukłych powinny być większe od \(R_{\Uparrow min} = 2500\,m\),\\
+        promienie łuków wklęsłych \(R_{\Downarrow min} = 1500\,m\). Takie też wartości przyjęto.
+
+        \subsubsection{Długości łuków}
+        Długości łuków pionowych obliczono wg. wzoru:
+        \begin{equation}
+            L_{n} = R_{min} \,\cdot\, \alpha_{n} 
+        \end{equation}
+
+        \begin{itemize}
+            \item \( L_{1} = R_{\Downarrow min} \,\cdot\, \alpha_{1} = 1500 \,\cdot\, 0,0083264 \approx 12,49\,m \)
+            \item \( L_{2} = R_{\Uparrow min} \,\cdot\, \alpha_{2} = 2500 \,\cdot\, 0,0131299 \approx 32,82\,m \)
+            \item \( L_{3} = R_{\Downarrow min} \,\cdot\, \alpha_{3} = 1500 \,\cdot\, 0,0161077 \approx 24,16\,m \)
+            \item \( L_{4} = R_{\Uparrow min} \,\cdot\, \alpha_{4} = 2500 \,\cdot\, 0,0133410 \approx 33,35\,m \)
+        \end{itemize}
+    \subsubsection{Długość stycznych}
+        Długości stycznych łuków pionowych obliczono wg.wzoru:
+        \begin{equation}
+            T_{i} = R_{n} \cdot tan(\frac{\alpha_{n}}{2})
+        \end{equation}
+
+        \begin{itemize}
+            \item \( T_{1} = R_{\Downarrow min} \,\cdot\, tan(\frac{\alpha_{1}}{2}) = 1500 \,\cdot\, tan(\frac{0,0083264}{2}) \approx 6,24\,m \)
+            \item \( T_{2} = R_{\Uparrow min} \,\cdot\, tan(\frac{\alpha_{2}}{2}) = 2500 \,\cdot\, tan(\frac{0,0131299}{2}) \approx 16,41\,m \)
+            \item \( T_{3} = R_{\Downarrow min} \,\cdot\, tan(\frac{\alpha_{3}}{2}) = 1500 \,\cdot\, tan(\frac{0,0161077}{2}) \approx 12,08\,m \)
+            \item \( T_{4} = R_{\Uparrow min} \,\cdot\, tan(\frac{\alpha_{4}}{2}) = 2500 \,\cdot\, tan(\frac{0,0133410}{2}) \approx 16,68\,m \)
+        \end{itemize}
+        \newpage
+    \subsubsection{Długości strzałek}
+        Długości strzałek łuków pionowych obliczono wg. wzoru:
+        \begin{equation}
+            B_{n} = \frac{T_{n}^{2}}{2\,\cdot\,R_{n}}
+        \end{equation}
+
+        \begin{itemize}
+            \item \( B_{1} = \frac{T_{1}^{2}}{2 \cdot R_{\Downarrow min}} = \frac{6,24^{2}}{2 \cdot 1500} \approx 0,013\,m \)
+            \item \( B_{2} = \frac{T_{2}^{2}}{2 \cdot R_{\Uparrow min}} = \frac{16,41^{2}}{2 \cdot 2500} \approx 0,054\,m \)
+            \item \( B_{3} = \frac{T_{3}^{2}}{2 \cdot R_{\Downarrow min}} = \frac{12,08^{2}}{2 \cdot 1500} \approx 0,049\,m \)
+            \item \( B_{4} = \frac{T_{4}^{2}}{2 \cdot R_{\Uparrow min}} = \frac{16,68^{2}}{2 \cdot 2500} \approx 0,056\,m \)
+        \end{itemize}
+    
+    \subsubsection{Rzędne środków łuków pionowych}
+        Rzędne środków łuków pionowych obliczono wg. wzoru:
+        \begin{equation}
+            r_{s\,\,n} = r_{n + 1} \pm B_{n}
+        \end{equation}
+
+        \begin{itemize}
+            \item \( r_{s\,\,1} = r_{2} + B_{1} = 281,19 + 0,013 = 281,203 \approx 281,20\,m.n.p.m. \)
+            \item \( r_{s\,\,2} = r_{3} - B_{2} = 282,86 - 0,054 = 282,806 \approx 282,81\,m.n.p.m. \)
+            \item \( r_{s\,\,3} = r_{4} + B_{3} = 280,42 + 0,049 = 280,469 \approx 280,47\,m.n.p.m. \)
+            \item \( r_{s\,\,4} = r_{5} - B_{4} = 282,55 - 0,056 = 282,494 \approx 282,49\,m.n.p.m. \)
+        \end{itemize}
+    \subsubsection{Rzędne początków łuków pionowych}
+        Rzędne początków łuków pionowych obliczono wg. wzoru:
+        \begin{equation}
+            r_{p\,\,n} = r_{n+1} \pm T_{n} \cdot i_{n}
+        \end{equation}
+        \begin{itemize}
+            \item \( r_{p\,\,1} = r_{2} + T_{1} \cdot i_{1} = 281,19 + 6,24 \cdot 0,0031163 \approx 281,21\,m.n.p.m. \)
+            \item \( r_{p\,\,2} = r_{3} - T_{2} \cdot i_{2} = 282,86 - 16,41 \cdot 0,0052101 \approx 282,77\,m.n.p.m. \)
+            \item \( r_{p\,\,3} = r_{4} + T_{3} \cdot i_{3} = 280,42 + 12,08 \cdot 0,0079198 \approx 280,50\,m.n.p.m. \)
+            \item \( r_{p\,\,4} = r_{5} - T_{4} \cdot i_{4} = 282,55 - 16,68 \cdot 0,0081879 \approx 282,41\,m.n.p.m. \)
+        \end{itemize}
+    \subsubsection{Rzędne końców łuków pionowych}
+        Rzędne końców łuków pionowych obliczono wg. wzoru:
+        \begin{equation}
+            r_{k\,\,n} = r_{n+1} \pm T_{n} \,\cdot\, i_{n+1}
+        \end{equation}
+
+        \begin{itemize}
+            \item \( r_{k\,\,1} = r_{2} + T_{1} \cdot i_{2} = 281,19 + 6,24 \cdot 0,0052101 \approx 281,22\,m.n.p.m. \)
+            \item \( r_{k\,\,2} = r_{3} - T_{2} \cdot i_{3} = 282,86 - 16,41 \cdot 0,0079198 \approx 282,73\,m.n.p.m. \)
+            \item \( r_{k\,\,3} = r_{4} + T_{3} \cdot i_{4} = 280,42 + 12,08 \cdot 0,0081879 \approx 280,52\,m.n.p.m. \)
+            \item \( r_{k\,\,4} = r_{5} - T_{4} \cdot i_{5} = 282,55 - 16,68 \cdot 0,0051531 \approx 282,46\,m.n.p.m. \)
+        \end{itemize}
+        \newpage
+\section{Przekrój typowy na prostej i charakterystyczne poprzeczne}
+        Dla projektowanego odcinka drogi w załączeniu zamieszczono przekroje
+        poprzeczne\\ typowe na odcinku prostym i na łuku, w skali 1:50.
+
+    \subsection{Szerokość i pochylenia poprzeczne jezdni i poboczy}
+        \subsubsection{Szerokość jezdni}
+        Zgodnie z wcześniejszym punktem \textbf{2.2 A} przyjęto:
+        \begin{itemize}
+            \item[--] Szerokość pojedyńczego pasa ruchu: \( b = 3,00\,m \)
+            \item[--] Szerokość jezdni: \( B = 6,00\,m \) 
+        \end{itemize}
+
+        \subsubsection{Szerokość pobocza}
+        Zgodnie z RMTiGW §37.1 pobocze gruntowe dla drogi klasy Z \\
+        powinno mieć szerokość nie mniejszą niż 1,00\,m.
+        \medskip
+
+        \textbf{Przyjęto:} szerokość pobocza \(b_{pob} = 1,00\,m\)
+
+        \subsubsection{Pochylenie poprzeczne jezdni na odcinku prostym}
+        Zgodnie z wcześniejszym punktem \textbf{2.2 C} jezdnia posiada przekrój daszkowy
+        \\o pochyleniu poprzeczym \( i_{o} = 2\% \).
+
+        \subsubsection{Pochylenie poprzeczne pobocza na odcinku prostym}
+            Zgodnie z RMTiGW §37.2 pkt.1, pochylenie poprzeczne pobocza gruntowego na odcinku prostym
+            powinno wynosić od 6\% do 8\%, przy szerokości pobocza nie mniejszej niż 1\,m.
+            \medskip
+            \textbf{Przyjęto:} Pochylenie poprzeczne pobocza \(i_{pob} = 7\%\)
+        
+        \subsubsection{Pochylenie poprzeczne jezdni na łuku}
+            Zgodnie z wcześniejszym punktem opracowania \textbf{2.2 B} oraz RMTiGW §21.2 pkt.C
+            \textbf{Przyjęto:} Pochylenie poprzeczne jezdni na łuku \(i_{p} = 4\% \)
+
+        \subsubsection{Pochylenie poprzeczne pobocza na łuku}
+            Zgodnie z RMTiGM §37.3 pkt.1 pochylenie poprzeczne pobocza gruntowego
+            na odcinku krzywoliniowym o pochyleniu poprzecznym innym, niż na odcinku prostym, powinno mieć:
+            \begin{itemize}[nolistsep]
+                \item[--] Od 2\% do 3\% więcej, niż pochylenie jezdni - po wewnętrznej stronie łuku
+                \item[--] Tyle co pochylenie jezdni, doszerokości 1\,m.\\
+                          Na pozostałej części 2\% w kierunku przeciwnym - po zewnętrznej stronie łuku. 
+            \end{itemize}
+            \newpage
+            \textbf{Przyjęto:}
+
+    
+%_________________________________________________________________
+\section{Objętości i rozdział mas ziemnych}
+%_________________________________________________________________
+\section{Ostatni punkt}
+%_________________________________________________________________
+\clearpage
+\section{Załączniki}
+\centering Lista załączonych dokumentów
+\begin{enumerate}
+\item Karta projektowa
+\item Rewers karty projektowej
+\item Załącznik
+\item Załącznik
+\item Załacznik
+\item Załącznik
+\item Załącznik
+\item Załacznik
+\item Załącznik
+\item Załącznik
+\end{enumerate}
+\includepdf[fitpaper,angle=0]{D:/Projekty/Komunikacyjne/Resources/KartaProjektu.pdf}
+\includepdf[fitpaper,angle=0]{D:/Projekty/Komunikacyjne/Resources/KartaRewers.pdf}
+%_________________________________________________________________
+\end{document}
